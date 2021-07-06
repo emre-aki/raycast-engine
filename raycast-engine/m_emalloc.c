@@ -21,6 +21,7 @@
 #include <stdlib.h>
 #include <stdio.h>
 
+#include "t_typedef.h"
 #include "m_emalloc.h"
 
 static const int E_TAG = 1;

@@ -17,8 +17,6 @@
 
 #ifndef m_emalloc_h
 
-#include "t_typedef.h"
-
 #define m_emalloc_h_E_Memblock E_Memblock
 #define m_emalloc_h_E_Init E_Init
 #define m_emalloc_h_E_Destroy E_Destroy
