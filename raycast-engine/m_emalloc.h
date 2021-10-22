@@ -22,6 +22,7 @@
 #define m_emalloc_h_E_Destroy E_Destroy
 #define m_emalloc_h_E_Malloc E_Malloc
 #define m_emalloc_h_E_Free E_Free
+#define m_emalloc_h_E_Memcpy E_Memcpy
 #define m_emalloc_h_E_Relloc E_Realloc
 #define m_emalloc_h_E_Verify E_Verify
 #define m_emalloc_h_E_Dump E_Dump
@@ -37,6 +38,7 @@ void E_Init (int sizemib);
 void E_Destroy (void);
 void* E_Malloc (int size, void* requester);
 void* E_Free (void* ptr);
+void E_Memcpy (void* dest, void* src, int size);
 void* E_Realloc (void* ptr, int size);
 int E_Verify (void);
 void E_Dump (void);

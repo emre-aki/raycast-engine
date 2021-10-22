@@ -151,10 +151,10 @@ void* E_Free (void* ptr)
     return p_blockhead;
 }
 
-static void E_Memcpy (void* dest, void* src, int size)
+void E_Memcpy (void* dest, void* src, int size)
 {
     byte *cpydest = (byte*) dest, *cpysrc = (byte*) src;
-    for (int i = 0; i < size; i += 1) cpydest[i] = *(cpysrc + i);
+    for (int i = 0; i < size; i += 1) *(cpydest + i) = *(cpysrc + i);
 }
 
 void* E_Realloc (void* ptr, int size)
